@@ -152,7 +152,7 @@
 
             &-row{
                 display: flex;
-                align-items: start;
+                align-items: center;
                 margin-bottom: 15px;
                 justify-content: space-between;
 

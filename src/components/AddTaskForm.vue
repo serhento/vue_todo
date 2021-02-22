@@ -1,13 +1,13 @@
 <template>
-    <div class="tasks__items-form">
-        <div @click="toggleForm" v-if="formToggle" class="tasks__items-form-new">
+    <div class="tasks__items--form">
+        <div @click="toggleForm" v-if="formToggle" class="tasks__items--form--new">
             <svg width="13" height="13" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8 1V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M1 8H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span>Новая задача</span>
         </div>
-        <div v-if="!formToggle" class="tasks__items-form-block">
+        <div v-if="!formToggle" class="tasks__items--form--block">
             <input v-model="taskName" class="field" type="text" placeholder="Название задачи">
             <button @click="setTaskToList" class="button">Добавить задачу</button>
             <button @click="resetForm" class="button button--grey">Отмена</button>
@@ -54,17 +54,17 @@
 </script>
 
 <style lang="scss">
-    .tasks__items-form{
+    .tasks__items--form{
         margin-top: 20px;
 
-        &-block{
+        &--block{
             .button{
                 margin-right: 10px;
                 margin-top: 15px;
             }
         }
 
-        &-new{
+        &--new{
             display: flex;
             align-items: center;
             cursor: pointer;

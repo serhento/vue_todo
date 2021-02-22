@@ -10,7 +10,7 @@
                 <div v-if="!item.img" class="badge" :class="['badge--'+item.color.name]"></div>
                 <img v-if="item.img" src="@/assets/img/list.svg" alt="">
             </i>
-            <span class="todo__list-name">
+            <span class="todo__list--name">
                 {{item.name}}
                 <span v-if="item.tasks && !item.img">{{`(${item.tasks.length})`}}</span>
             </span>
@@ -64,7 +64,7 @@
     .todo__list{
         position: relative;
 
-        &-name{
+        &--name{
             flex: 1;
             text-overflow: ellipsis;
             overflow: hidden;
