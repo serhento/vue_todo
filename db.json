@@ -1,0 +1,114 @@
+{
+  "lists": [
+    {
+      "id": 1,
+      "name": "Список задач",
+      "img": "@/assets/img/list.svg",
+      "colorId": 7
+    },
+    {
+      "id": 2,
+      "name": "Продажи",
+      "colorId": 1,
+      "color": "grey"
+    },
+    {
+      "id": 3,
+      "name": "Фронтенд",
+      "colorId": 2,
+      "color": "green"
+    },
+    {
+      "id": 4,
+      "name": "Фильмы и сериалы",
+      "colorId": 3,
+      "color": "blue"
+    },
+    {
+      "id": 5,
+      "name": "Книги",
+      "colorId": 4,
+      "color": "pink"
+    },
+    {
+      "id": 6,
+      "name": "Личное",
+      "colorId": 5,
+      "color": "lime"
+    },
+    {
+      "name": "Спорт",
+      "colorId": 6,
+      "id": 7,
+      "color": "purple"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "listId": 3,
+      "text": "Изучить JavaScript",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "listId": 3,
+      "text": "Изучить паттерны проектирования",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "listId": 3,
+      "text": "Vue JS",
+      "completed": true
+    },
+    {
+      "id": 4,
+      "listId": 3,
+      "text": "Vuex",
+      "completed": true
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "hex": "#C9D1D3",
+      "name": "grey"
+    },
+    {
+      "id": 2,
+      "hex": "#42B883",
+      "name": "green"
+    },
+    {
+      "id": 3,
+      "hex": "#64C4ED",
+      "name": "blue"
+    },
+    {
+      "id": 4,
+      "hex": "#FFBBCC",
+      "name": "pink"
+    },
+    {
+      "id": 5,
+      "hex": "#B6E6BD",
+      "name": "lime"
+    },
+    {
+      "id": 6,
+      "hex": "#C355F5",
+      "name": "purple"
+    },
+    {
+      "id": 7,
+      "hex": "#110133",
+      "name": "black"
+    },
+    {
+      "id": 8,
+      "hex": "#FF6464",
+      "name": "red"
+    }
+  ]
+}
