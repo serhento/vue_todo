@@ -25,22 +25,16 @@
       "color": "blue"
     },
     {
-      "id": 5,
-      "name": "Книги",
-      "colorId": 4,
-      "color": "pink"
-    },
-    {
-      "id": 6,
       "name": "Личное",
-      "colorId": 5,
-      "color": "lime"
+      "colorId": 6,
+      "color": "purple",
+      "id": 9
     },
     {
       "name": "Спорт",
-      "colorId": 6,
-      "id": 7,
-      "color": "purple"
+      "colorId": 4,
+      "color": "pink",
+      "id": 10
     }
   ],
   "tasks": [

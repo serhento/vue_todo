@@ -26,7 +26,6 @@ let store = new Vuex.Store({
                 })
         },
         ADD_TASK_TO_LIST({commit}, task){
-            //commit('ADD_TASK_TO_STATE',task);
             axios.post('http://localhost:3000/lists/', task)
                 .then(()=>{
                     commit('ADD_TASK_TO_STATE',task);
@@ -34,8 +33,7 @@ let store = new Vuex.Store({
                 .catch((error)=>{
                     console.log(error);
                     return error;
-                })
-
+                });
         },
         DELETE_LIST_FROM_LISTS({commit}, id){
             axios.delete(`http://localhost:3000/lists/${id}`)
@@ -128,7 +126,6 @@ let store = new Vuex.Store({
                     console.log(error);
                     return error;
                 })
-
         }
     },
     mutations: {
@@ -139,7 +136,8 @@ let store = new Vuex.Store({
             state.lists.push(task)
         },
         DELETE_LIST_FROM_STATE:(state, id)=>{
-            state.lists.splice(id, 1)
+            let res = state.lists.filter(item=> item.id !== id);
+            state.lists = res
         },
         SET_TASKS_TO_STATE:(state, tasks)=>{
             state.tasks = tasks;
@@ -169,7 +167,8 @@ let store = new Vuex.Store({
             state.tasks = newList;
         },
         DELETE_TASK_FROM_STATE:(state, id)=>{
-            state.tasks.splice(id, 1)
+            let res = state.tasks.filter(item=> item.id !== id);
+            state.tasks = res
         },
         SET_TASK_COMPLETED:(state, data)=>{
             const newTasks = state.tasks.map((item)=>{

@@ -85,7 +85,6 @@
                 console.log(id)
                 if (window.confirm('Вы действительно хотите удалить задачу?')){
                     this.DELETE_TASK_FROM_TASKS(id);
-                    setTimeout(this.GET_TASKS_FROM_API, 100);
                     setTimeout(this.GET_LISTS_FROM_API, 100);
                 }
             }
